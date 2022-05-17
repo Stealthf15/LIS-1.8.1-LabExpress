@@ -1,0 +1,496 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LIS
+</name>
+</assembly>
+<members>
+<member name="T:LIS.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:LIS.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:LIS.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:LIS.My.Resources.Resources.SBSI_Logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.company_profileDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.orderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.patient_remarksDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.viewordermedtechDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.vieworderpathologistDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.resultDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.vieworderverifiedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.additional_infoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.pentrac400DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.pentraxl80DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.patient_infoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.chemistryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.qcresultDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.hematologyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.specimen_trackingDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_hematologyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.tmpworklistDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_chemistryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.viewtatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_urinalysisDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_fecalysisDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.company_profileRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.orderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.patient_remarksRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.viewordermedtechRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.vieworderpathologistRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.resultRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.vieworderverifiedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.additional_infoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.pentrac400Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.pentraxl80Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.patient_infoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.chemistryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.qcresultRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.hematologyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.specimen_trackingRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_hematologyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.tmpworklistRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_chemistryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.viewtatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_urinalysisRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_fecalysisRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.company_profileRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.orderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.patient_remarksRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.viewordermedtechRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.vieworderpathologistRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.resultRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.vieworderverifiedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.additional_infoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.pentrac400RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.pentraxl80RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.patient_infoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.chemistryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.qcresultRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.hematologyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.specimen_trackingRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_hematologyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.tmpworklistRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_chemistryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.viewtatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_urinalysisRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSet.worksheet_fecalysisRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.company_profileTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.orderTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.patient_remarksTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.viewordermedtechTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.vieworderpathologistTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.resultTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.vieworderverifiedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.additional_infoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.pentrac400TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.pentraxl80TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.patient_infoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.chemistryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.qcresultTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.hematologyTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.specimen_trackingTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.worksheet_hematologyTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.tmpworklistTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.worksheet_chemistryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.viewtatTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.worksheet_urinalysisTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.worksheet_fecalysisTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LIS.db_sbsi_lis_universalDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LIS.db_sbsi_lis_universalDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LIS.db_sbsi_lis_universalDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateAll(LIS.db_sbsi_lis_universalDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:LIS.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

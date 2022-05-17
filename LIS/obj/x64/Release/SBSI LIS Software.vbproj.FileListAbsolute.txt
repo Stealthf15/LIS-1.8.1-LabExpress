@@ -1,0 +1,110 @@
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\bin\x64\Release\SBSI LIS Software.exe.config
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\bin\x64\Release\SBSI LIS Software.exe
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\bin\x64\Release\SBSI LIS Software.pdb
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\bin\x64\Release\SBSI LIS Software.xml
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\bin\x64\Release\Skin Blue.dll
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI LIS Software.vbprojResolveAssemblyReference.cache
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmMain.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmResultsOArchived.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmControlSetting.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmControlSettingAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmReasonReject.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmReasonCancel.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmQC.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmResultsOrdered.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmArchive.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmResultsNew.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmSystemTray.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmAccountSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmAccountSemiA.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmAccountSemiE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmBatchChemSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmWorkListChemSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmMainSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmSystemTraySemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmBatchHemaSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmWorkListHemaSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientSemiAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientListSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientOrderSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientOrderSemiAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmControlSettingSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmControlSettingSemiAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmQCSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmResultsPendingSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmAddTestSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmResultsOArchivedSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmResultsNewSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmResultsOrderedSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmArchiveSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmNewOrderSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmReasonCancelSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmReasonRejectSemi.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmChangeUser.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTResultUrin.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmTestComm.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmUnitAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmUnit.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmTestName.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmTestNameAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmBackup.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmRangeA.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmRangeE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmBarcode.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientOrder.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientOrderAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmNoCopies.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmDefaultPrinter.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmWebsite.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmSetup.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmLogout.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTChartChem.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmBatchChem.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTBatchChem.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmBatchHema.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTBatch.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmWorkListChem.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTChartHema.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTWorksheetChem.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmWorkListHema.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTresults.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmSettings.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmRangeList.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmRange.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmAccount.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmAccountE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmAccountA.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientList.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmLockScreen.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmCompanyProfile.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmLoginTech.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmDBUtils.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmLogin.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmMachineAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmDeparment.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmDepartmentAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmDoctor.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmDoctorAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmMedTech.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmMedTechAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPathologist.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPathologistAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmTestTypeAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmTestType.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmTest.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmTestAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatient.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmPatientAE.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmNewOrder.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.frmMachineList.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTResult.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.RPTWorksheet.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI_LIS_Software.Resources.resources
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI LIS Software.vbproj.GenerateResource.Cache
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI LIS Software.exe.licenses
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\RdlCompile.cache
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\RdlCompile.compiled
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI LIS Software.exe
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI LIS Software.xml
+D:\SBIS LIS\SBSI LIS LAN\SBSI LIS Software\obj\x64\Release\SBSI LIS Software.pdb

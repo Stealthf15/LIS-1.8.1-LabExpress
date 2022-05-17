@@ -1,0 +1,456 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SBSI LIS Software
+</name>
+</assembly>
+<members>
+<member name="T:SBSI_LIS_Software.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SBSI_LIS_Software.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SBSI_LIS_Software.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.company_profileDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.orderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.patient_remarksDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewordermedtechDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.vieworderpathologistDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.resultDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.vieworderverifiedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.additional_infoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewtat2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.pentrac400DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.pentraxl80DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.patient_infoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.chemistryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.qcresultDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.hematologyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewtatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.company_profileRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.orderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.patient_remarksRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewordermedtechRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.vieworderpathologistRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.resultRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.vieworderverifiedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.additional_infoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewtat2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.pentrac400Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.pentraxl80Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.patient_infoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.chemistryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.qcresultRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.hematologyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewtatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.company_profileRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.orderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.patient_remarksRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewordermedtechRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.vieworderpathologistRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.resultRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.vieworderverifiedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.additional_infoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewtat2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.pentrac400RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.pentraxl80RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.patient_infoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.chemistryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.qcresultRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.hematologyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSet.viewtatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.company_profileTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.orderTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.patient_remarksTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.viewordermedtechTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.vieworderpathologistTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.resultTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.vieworderverifiedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.additional_infoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.viewtat2TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.pentrac400TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.pentraxl80TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.patient_infoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.chemistryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.qcresultTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.hematologyTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.viewtatTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SBSI_LIS_Software.db_sbsi_lis_universalDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SBSI_LIS_Software.db_sbsi_lis_universalDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SBSI_LIS_Software.db_sbsi_lis_universalDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateAll(SBSI_LIS_Software.db_sbsi_lis_universalDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SBSI_LIS_Software.db_sbsi_lis_universalDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="P:SBSI_LIS_Software.Cybele.Thinfinity.BrowserInfo.SelectedRule">
+ <summary>
+ \Returns the selected Browser Rule.
+ </summary>
+</member>
+<member name="P:SBSI_LIS_Software.Cybele.Thinfinity.BrowserInfo.ExtraData">
+ <summary>
+ \Returns aditional data from Browser (JSON format).
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.BrowserInfo.GetExtraDataValue(System.String)">
+ <summary>
+ \Returns a specific value from ExtraData by it's name.
+ </summary>
+ <param name="Name">Name of value to return.</param>
+</member>
+<member name="T:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc">
+ <summary>
+ Contains properties to manage the VirtualUI Development
+ Server as well as the access from the developer's web
+ browser.
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.CreateComponent(System.String,System.String,System.IntPtr)">
+ <summary>
+   Inserts an HTML. Used to insert regular HTML elements or WebComponents with custom elements. 
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.CreateSessionURL(System.String,System.String)">
+ <summary>
+   Creates an url pointing to a local filename. This url is valid during the session lifetime and its private to this session.
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.LoadScript(System.String)">
+ <summary>
+   Loads a script from url.
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.LoadScript(System.String,System.String)">
+ <summary>
+  Loads a script from URL. If Filename is specified, creates a session
+  URL first and then load the script from that Filename.
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.ImportHTML(System.String)">
+ <summary>
+  Imports an HTML from URL. If Filename is specified, creates a session
+  URL first and then imports the html file from that Filename.
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.ImportHTML(System.String,System.String)">
+ <summary>
+   Imports an HTML file from disk and assigns a session url.
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.GetSafeUrl(System.String)">
+ <summary>
+   Gets a safe, temporary and unique URL to access any file in the disk.
+ </summary>
+</member>
+<member name="M:SBSI_LIS_Software.Cybele.Thinfinity.HTMLDoc.GetSafeUrl(System.String,System.Int32)">
+ <summary>
+   Gets a safe, temporary and unique URL to access any file in the disk.
+ </summary>
+</member>
+</members>
+</doc>
