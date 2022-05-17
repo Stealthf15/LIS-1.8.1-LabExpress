@@ -1,0 +1,1102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{872257C7-D34D-4540-AF30-29E375CD77E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SBSI_LIS_Software.My.MyApplication</StartupObject>
+    <RootNamespace>SBSI_LIS_Software</RootNamespace>
+    <AssemblyName>SBSI LIS Software</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Ardison\Documents\SBSILIS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SBSI LIS Software.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SBSI LIS Software.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>science.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SBSI LIS Software.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\SBSI LIS Software.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>SBSI LIS Software.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\SBSI LIS Software.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Presets, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Win, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.11\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Skin Blue, Version=17.1.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Skin Blue.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\frmAccountE.Designer.vb">
+      <DependentUpon>frmAccountE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmAccountE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="db_sbsi_lis_universalDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_sbsi_lis_universalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_sbsi_lis_universalDataSet.vb">
+      <DependentUpon>db_sbsi_lis_universalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmAccount.Designer.vb">
+      <DependentUpon>frmAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\frmAccountA.Designer.vb">
+      <DependentUpon>frmAccountA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Account\frmAccountA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Frontdesk\frmOrders.designer.vb">
+      <DependentUpon>frmOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Frontdesk\frmOrders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Frontdesk\frmOrdersAE.designer.vb">
+      <DependentUpon>frmOrdersAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Frontdesk\frmOrdersAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientAddTest.Designer.vb">
+      <DependentUpon>frmPatientAddTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientAddTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientOrderSample.designer.vb">
+      <DependentUpon>frmPatientOrderSample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientOrderSample.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\QC\frmQCResults.designer.vb">
+      <DependentUpon>frmQCResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\QC\frmQCResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsXMatch.designer.vb">
+      <DependentUpon>frmResultsXMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsXMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmRerun.designer.vb">
+      <DependentUpon>frmRerun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmRerun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsArchivedOld.designer.vb">
+      <DependentUpon>frmResultsArchivedOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsArchivedOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsArchived.designer.vb">
+      <DependentUpon>frmResultsArchived.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsArchived.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsNew.designer.vb">
+      <DependentUpon>frmResultsNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmOrder.designer.vb">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsOrdered.designer.vb">
+      <DependentUpon>frmResultsOrdered.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultsOrdered.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmCensus.designer.vb">
+      <DependentUpon>frmCensus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmCensus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmCensusGraph.designer.vb">
+      <DependentUpon>frmCensusGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmCensusGraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmTaT.designer.vb">
+      <DependentUpon>frmTaT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmTaT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmDeltaCheck.designer.vb">
+      <DependentUpon>frmDeltaCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmDeltaCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmWorkSheet.designer.vb">
+      <DependentUpon>frmWorkSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmWorkSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Patient\frmPatient.designer.vb">
+      <DependentUpon>frmPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Patient\frmPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Patient\frmPatientAE.Designer.vb">
+      <DependentUpon>frmPatientAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Patient\frmPatientAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientList.designer.vb">
+      <DependentUpon>frmPatientList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientOrder.designer.vb">
+      <DependentUpon>frmPatientOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientOrderAE.designer.vb">
+      <DependentUpon>frmPatientOrderAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Phlebotomy\frmPatientOrderAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\QC\frmControlTargetAE.designer.vb">
+      <DependentUpon>frmControlTargetAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\QC\frmControlTargetAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\QC\frmControlSetting.designer.vb">
+      <DependentUpon>frmControlSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\QC\frmControlSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\QC\frmControlSettingAE.designer.vb">
+      <DependentUpon>frmControlSettingAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\QC\frmControlSettingAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\QC\frmQC.designer.vb">
+      <DependentUpon>frmQC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\QC\frmQC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultPrevious.designer.vb">
+      <DependentUpon>frmResultPrevious.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmResultPrevious.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Result\frmAddTest.designer.vb">
+      <DependentUpon>frmAddTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Result\frmAddTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmArchive.designer.vb">
+      <DependentUpon>frmArchive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmArchive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmNewOrder.designer.vb">
+      <DependentUpon>frmNewOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmNewOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmReasonCancel.Designer.vb">
+      <DependentUpon>frmReasonCancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmReasonCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmReasonReject.Designer.vb">
+      <DependentUpon>frmReasonReject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIS\Worklist\frmReasonReject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\modDBConnection.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterCoag.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterCoagReleased.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterFecal.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterUrin.vb" />
+    <Compile Include="Printer Modules\RDLCGenerateCensus.vb" />
+    <Compile Include="Printer Modules\RDLCGenerateWorksheet.vb" />
+    <Compile Include="Printer Modules\RDLCPrintPreview.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterQC.vb" />
+    <Compile Include="Reports Form\RPTCensusChart.Designer.vb">
+      <DependentUpon>RPTCensusChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Form\RPTCensusChart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Form\RPTCensus.Designer.vb">
+      <DependentUpon>RPTCensus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Form\RPTCensus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Form\RPTTaT.Designer.vb">
+      <DependentUpon>RPTTaT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Form\RPTTaT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmChangeUser.Designer.vb">
+      <DependentUpon>frmChangeUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmChangeUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer Modules\RDLCPrinterHema.vb" />
+    <Compile Include="Printer Modules\RDLCPrinter.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterHemaReleased.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterChemReleased.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterElectReleased.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterElect.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterPWorkSheet.vb" />
+    <Compile Include="Printer Modules\RDLCPrinterReleased.vb" />
+    <Compile Include="Reports Form\RPTWorksheet.Designer.vb">
+      <DependentUpon>RPTWorksheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Form\RPTWorksheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmShift.Designer.vb">
+      <DependentUpon>frmShift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmShift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmShiftAE.Designer.vb">
+      <DependentUpon>frmShiftAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmShiftAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmSpecimen.Designer.vb">
+      <DependentUpon>frmSpecimen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmSpecimen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenAE.Designer.vb">
+      <DependentUpon>frmSpecimenAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDBTables.Designer.vb">
+      <DependentUpon>frmDBTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDBTables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDBRestore.Designer.vb">
+      <DependentUpon>frmDBRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDBRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmSystemConfig.Designer.vb">
+      <DependentUpon>frmSystemConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmSystemConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmRangeCopy.Designer.vb">
+      <DependentUpon>frmRangeCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmRangeCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenCopy.Designer.vb">
+      <DependentUpon>frmSpecimenCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmOrder.Designer.vb">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmOrderAE.Designer.vb">
+      <DependentUpon>frmOrderAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmOrderAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmUnitAE.Designer.vb">
+      <DependentUpon>frmUnitAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmUnitAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmUnit.Designer.vb">
+      <DependentUpon>frmUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmTestName.Designer.vb">
+      <DependentUpon>frmTestName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmTestName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmTestNameAE.Designer.vb">
+      <DependentUpon>frmTestNameAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmTestNameAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDBBackup.Designer.vb">
+      <DependentUpon>frmDBBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDBBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmRangeAE.designer.vb">
+      <DependentUpon>frmRangeAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmRangeAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmBarcode.Designer.vb">
+      <DependentUpon>frmBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmNoCopies.Designer.vb">
+      <DependentUpon>frmNoCopies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmNoCopies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDefaultPrinter.Designer.vb">
+      <DependentUpon>frmDefaultPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDefaultPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmWebsite.Designer.vb">
+      <DependentUpon>frmWebsite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmWebsite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetup.Designer.vb">
+      <DependentUpon>frmSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmLogout.Designer.vb">
+      <DependentUpon>frmLogout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmLogout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\SecurityManager.vb" />
+    <Compile Include="Reports Form\RPTResults.Designer.vb">
+      <DependentUpon>RPTResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports Form\RPTResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmRangeList.Designer.vb">
+      <DependentUpon>frmRangeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmRangeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmLockScreen.Designer.vb">
+      <DependentUpon>frmLockScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmLockScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmCompanyProfile.Designer.vb">
+      <DependentUpon>frmCompanyProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmCompanyProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmLoginTech.Designer.vb">
+      <DependentUpon>frmLoginTech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmLoginTech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDBUtils.Designer.vb">
+      <DependentUpon>frmDBUtils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDBUtils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmMachineAE.Designer.vb">
+      <DependentUpon>frmMachineAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmMachineAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDepartment.Designer.vb">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDepartmentAE.Designer.vb">
+      <DependentUpon>frmDepartmentAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDepartmentAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDoctor.Designer.vb">
+      <DependentUpon>frmDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmDoctorAE.Designer.vb">
+      <DependentUpon>frmDoctorAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmDoctorAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmMedTech.Designer.vb">
+      <DependentUpon>frmMedTech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmMedTech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmMedTechAE.Designer.vb">
+      <DependentUpon>frmMedTechAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmMedTechAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmPathologist.Designer.vb">
+      <DependentUpon>frmPathologist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmPathologist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmPathologistAE.Designer.vb">
+      <DependentUpon>frmPathologistAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmPathologistAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenMappingAE.Designer.vb">
+      <DependentUpon>frmSpecimenMappingAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenMappingAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenMapping.Designer.vb">
+      <DependentUpon>frmSpecimenMapping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmSpecimenMapping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmTest.Designer.vb">
+      <DependentUpon>frmTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmTestAE.Designer.vb">
+      <DependentUpon>frmTestAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmTestAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\frmMachineList.Designer.vb">
+      <DependentUpon>frmMachineList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\frmMachineList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer Modules\RDLCPrinterChem.vb" />
+    <Compile Include="Modules\modClass.vb" />
+    <Compile Include="Modules\modVariables.vb" />
+    <Compile Include="Modules\MyComparer.vb" />
+    <Compile Include="Printer Modules\RDLCPrintPreviewQC.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Account\frmAccountE.resx">
+      <DependentUpon>frmAccountE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmAccount.resx">
+      <DependentUpon>frmAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\frmAccountA.resx">
+      <DependentUpon>frmAccountA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Frontdesk\frmOrders.resx">
+      <DependentUpon>frmOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Frontdesk\frmOrdersAE.resx">
+      <DependentUpon>frmOrdersAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Phlebotomy\frmPatientAddTest.resx">
+      <DependentUpon>frmPatientAddTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Phlebotomy\frmPatientOrderSample.resx">
+      <DependentUpon>frmPatientOrderSample.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\QC\frmQCResults.resx">
+      <DependentUpon>frmQCResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmResultsXMatch.resx">
+      <DependentUpon>frmResultsXMatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmRerun.resx">
+      <DependentUpon>frmRerun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmResultsArchivedOld.resx">
+      <DependentUpon>frmResultsArchivedOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmResultsArchived.resx">
+      <DependentUpon>frmResultsArchived.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmResultsNew.resx">
+      <DependentUpon>frmResultsNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmOrder.resx">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmResultsOrdered.resx">
+      <DependentUpon>frmResultsOrdered.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmCensus.resx">
+      <DependentUpon>frmCensus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmCensusGraph.resx">
+      <DependentUpon>frmCensusGraph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmTaT.resx">
+      <DependentUpon>frmTaT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmDeltaCheck.resx">
+      <DependentUpon>frmDeltaCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmWorkSheet.resx">
+      <DependentUpon>frmWorkSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Patient\frmPatient.resx">
+      <DependentUpon>frmPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Patient\frmPatientAE.resx">
+      <DependentUpon>frmPatientAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Phlebotomy\frmPatientList.resx">
+      <DependentUpon>frmPatientList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Phlebotomy\frmPatientOrder.resx">
+      <DependentUpon>frmPatientOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Phlebotomy\frmPatientOrderAE.resx">
+      <DependentUpon>frmPatientOrderAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\QC\frmControlTargetAE.resx">
+      <DependentUpon>frmControlTargetAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\QC\frmControlSetting.resx">
+      <DependentUpon>frmControlSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\QC\frmControlSettingAE.resx">
+      <DependentUpon>frmControlSettingAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\QC\frmQC.resx">
+      <DependentUpon>frmQC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmResultPrevious.resx">
+      <DependentUpon>frmResultPrevious.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Result\frmAddTest.resx">
+      <DependentUpon>frmAddTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmArchive.resx">
+      <DependentUpon>frmArchive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmNewOrder.resx">
+      <DependentUpon>frmNewOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmReasonCancel.resx">
+      <DependentUpon>frmReasonCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIS\Worklist\frmReasonReject.resx">
+      <DependentUpon>frmReasonReject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Form\RPTCensusChart.resx">
+      <DependentUpon>RPTCensusChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Form\RPTCensus.resx">
+      <DependentUpon>RPTCensus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Form\RPTTaT.resx">
+      <DependentUpon>RPTTaT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportStandardHema.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportStandardFecal.rdlc" />
+    <EmbeddedResource Include="Reports\ReportStandardUrin.rdlc" />
+    <EmbeddedResource Include="Reports\ReportCensusHemaChart.rdlc" />
+    <EmbeddedResource Include="Reports\ReportCensusChemChart.rdlc" />
+    <EmbeddedResource Include="Reports\ReportCensusChem.rdlc" />
+    <EmbeddedResource Include="Reports\ReportCensusHema.rdlc" />
+    <EmbeddedResource Include="Reports\ReportStandardQC.rdlc" />
+    <EmbeddedResource Include="Reports\ReportStandard.rdlc" />
+    <EmbeddedResource Include="Reports\ReportStandardChem.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportStandardElect.rdlc" />
+    <EmbeddedResource Include="Reports\ReportTaT.rdlc" />
+    <EmbeddedResource Include="Reports\ReportWorksheetChem.rdlc" />
+    <EmbeddedResource Include="Reports\ReportWorksheetHema.rdlc" />
+    <EmbeddedResource Include="Security\frmChangeUser.resx">
+      <DependentUpon>frmChangeUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Form\RPTWorksheet.resx">
+      <DependentUpon>RPTWorksheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmShift.resx">
+      <DependentUpon>frmShift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmShiftAE.resx">
+      <DependentUpon>frmShiftAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmSpecimen.resx">
+      <DependentUpon>frmSpecimen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmSpecimenAE.resx">
+      <DependentUpon>frmSpecimenAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDBTables.resx">
+      <DependentUpon>frmDBTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDBRestore.resx">
+      <DependentUpon>frmDBRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmSystemConfig.resx">
+      <DependentUpon>frmSystemConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmRangeCopy.resx">
+      <DependentUpon>frmRangeCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmSpecimenCopy.resx">
+      <DependentUpon>frmSpecimenCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmOrder.resx">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmOrderAE.resx">
+      <DependentUpon>frmOrderAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmUnitAE.resx">
+      <DependentUpon>frmUnitAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmUnit.resx">
+      <DependentUpon>frmUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmTestName.resx">
+      <DependentUpon>frmTestName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmTestNameAE.resx">
+      <DependentUpon>frmTestNameAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDBBackup.resx">
+      <DependentUpon>frmDBBackup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmRangeAE.resx">
+      <DependentUpon>frmRangeAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmBarcode.resx">
+      <DependentUpon>frmBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmNoCopies.resx">
+      <DependentUpon>frmNoCopies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDefaultPrinter.resx">
+      <DependentUpon>frmDefaultPrinter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmWebsite.resx">
+      <DependentUpon>frmWebsite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetup.resx">
+      <DependentUpon>frmSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmLogout.resx">
+      <DependentUpon>frmLogout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Form\RPTResults.resx">
+      <DependentUpon>RPTResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmRangeList.resx">
+      <DependentUpon>frmRangeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmLockScreen.resx">
+      <DependentUpon>frmLockScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmCompanyProfile.resx">
+      <DependentUpon>frmCompanyProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmLoginTech.resx">
+      <DependentUpon>frmLoginTech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDBUtils.resx">
+      <DependentUpon>frmDBUtils.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmMachineAE.resx">
+      <DependentUpon>frmMachineAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDepartment.resx">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDepartmentAE.resx">
+      <DependentUpon>frmDepartmentAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDoctor.resx">
+      <DependentUpon>frmDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmDoctorAE.resx">
+      <DependentUpon>frmDoctorAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmMedTech.resx">
+      <DependentUpon>frmMedTech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmMedTechAE.resx">
+      <DependentUpon>frmMedTechAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmPathologist.resx">
+      <DependentUpon>frmPathologist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmPathologistAE.resx">
+      <DependentUpon>frmPathologistAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmSpecimenMappingAE.resx">
+      <DependentUpon>frmSpecimenMappingAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmSpecimenMapping.resx">
+      <DependentUpon>frmSpecimenMapping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmTest.resx">
+      <DependentUpon>frmTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmTestAE.resx">
+      <DependentUpon>frmTestAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\frmMachineList.resx">
+      <DependentUpon>frmMachineList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="db_sbsi_lis_universalDataSet.xsc">
+      <DependentUpon>db_sbsi_lis_universalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_sbsi_lis_universalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_sbsi_lis_universalDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_sbsi_lis_universalDataSet.xss">
+      <DependentUpon>db_sbsi_lis_universalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="science.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
