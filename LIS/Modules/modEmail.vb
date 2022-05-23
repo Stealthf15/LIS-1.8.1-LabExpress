@@ -153,7 +153,9 @@ Module modEmail
 
             Email.From = New MailAddress("LabExpress <" & SMTP_Sender & ">")
             'For Each Recipient As String In Receiver
-            Email.Bcc.Add(Receiver)
+            Email.CC.Add(Receiver)
+            'Email.CC.Add(SMTP_CC)
+            'Email.Bcc.Add(SMTP_BC)
             'Next
             'Email.To.Add(Receiver)
             Email.Subject = "Laboratory Test Result"
@@ -190,12 +192,15 @@ Module modEmail
             MessageBox.Show("Email successfully sent.", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As SmtpException
             Email.Dispose()
+            MessageBox.Show(ex.Message, "SMTP Exception", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return ex.Message
         Catch ex As ArgumentOutOfRangeException
             Email.Dispose()
+            MessageBox.Show(ex.Message, "AOR Exception", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return ex.Message
         Catch Ex As InvalidOperationException
             Email.Dispose()
+            MessageBox.Show(Ex.Message, "Invalid Operation Exception", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Return Ex.Message
         End Try
         'MessageBox.Show("Nothing")

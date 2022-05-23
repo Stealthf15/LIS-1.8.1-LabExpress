@@ -61,22 +61,43 @@ Public Class frmEmailPush
     End Sub
 
     Private Sub btnSendResult_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSendResult.ItemClick
-        sendmail(GridView.GetFocusedRowCellValue("EmailAddress"),
-                 GridView.GetFocusedRowCellValue("PatientName"),
-                 GridView.GetFocusedRowCellValue("PDFLocation") & GridView.GetFocusedRowCellValue("SampleID") & "_" & GridView.GetFocusedRowCellValue("PatientName") & ".PDF")
+        Dim selectedRows() As Integer = GridView.GetSelectedRows()
+        For Each rowHandle As Integer In selectedRows
+            If rowHandle >= 0 Then
+                sendmail(GridView.GetRowCellValue(rowHandle, GridView.Columns("EmailAddress")),
+                 GridView.GetRowCellValue(rowHandle, GridView.Columns("PatientName")),
+                 GridView.GetRowCellValue(rowHandle, GridView.Columns("PDFLocation")) & GridView.GetRowCellValue(rowHandle, GridView.Columns("SampleID")) & "_" & GridView.GetRowCellValue(rowHandle, GridView.Columns("PatientName")) & ".PDF")
 
-        '------------------Save Email Details------------------------------
-        rs.Parameters.Clear()
-        rs.Parameters.AddWithValue("@SampleID", GridView.GetFocusedRowCellValue("SampleID"))
-        rs.Parameters.AddWithValue("@Section", GridView.GetFocusedRowCellValue("Section"))
-        rs.Parameters.AddWithValue("@SubSection", GridView.GetFocusedRowCellValue("SubSection"))
-        Connect()
-        rs.Connection = conn
-        rs.CommandType = CommandType.Text
-        rs.CommandText = ("UPDATE `email_details` SET `status` = 1 WHERE `sample_id` = @SampleID AND `section` = @Section AND `sub_section` = @SubSection")
-        rs.ExecuteNonQuery()
-        Disconnect()
-        '------------------Save Email Details------------------------------
+                '------------------Save Email Details------------------------------
+                rs.Parameters.Clear()
+                rs.Parameters.AddWithValue("@SampleID", GridView.GetRowCellValue(rowHandle, GridView.Columns("SampleID")))
+                rs.Parameters.AddWithValue("@Section", GridView.GetRowCellValue(rowHandle, GridView.Columns("Section")))
+                rs.Parameters.AddWithValue("@SubSection", GridView.GetRowCellValue(rowHandle, GridView.Columns("SubSection")))
+                Connect()
+                rs.Connection = conn
+                rs.CommandType = CommandType.Text
+                rs.CommandText = ("UPDATE `email_details` SET `status` = 1 WHERE `sample_id` = @SampleID AND `section` = @Section AND `sub_section` = @SubSection")
+                rs.ExecuteNonQuery()
+                Disconnect()
+                '------------------Save Email Details------------------------------
+            End If
+        Next rowHandle
+
+        'sendmail(GridView.GetFocusedRowCellValue(GridView.Columns("EmailAddress")),
+        '         GridView.GetFocusedRowCellValue(GridView.Columns("PatientName")),
+        '         GridView.GetFocusedRowCellValue(GridView.Columns("PDFLocation")) & GridView.GetFocusedRowCellValue(GridView.Columns("SampleID")) & "_" & GridView.GetFocusedRowCellValue(GridView.Columns("PatientName")) & ".PDF")
+
+        ''------------------Save Email Details------------------------------
+        'rs.Parameters.Clear()
+        'rs.Parameters.AddWithValue("@SampleID", GridView.GetFocusedRowCellValue(GridView.Columns("SampleID")))
+        'rs.Parameters.AddWithValue("@Section", GridView.GetFocusedRowCellValue(GridView.Columns("Section")))
+        'rs.Parameters.AddWithValue("@SubSection", GridView.GetFocusedRowCellValue(GridView.Columns("SubSection")))
+        'Connect()
+        'rs.Connection = conn
+        'rs.CommandType = CommandType.Text
+        'rs.CommandText = ("UPDATE `email_details` SET `status` = 1 WHERE `sample_id` = @SampleID AND `section` = @Section AND `sub_section` = @SubSection")
+        'rs.ExecuteNonQuery()
+        'Disconnect()
 
         LoadRecords()
     End Sub

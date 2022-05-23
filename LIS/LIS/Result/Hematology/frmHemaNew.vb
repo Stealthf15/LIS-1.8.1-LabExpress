@@ -798,7 +798,7 @@ Public Class frmHemaNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
             rs.Parameters.AddWithValue("@specimen_tracking_date_time", Now) 'version 1.6.0.0-beta
@@ -1000,6 +1000,8 @@ Public Class frmHemaNew
             End If
             Disconnect()
 
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
+
             Connect()
             rs.Connection = conn
             rs.CommandType = CommandType.Text
@@ -1152,7 +1154,7 @@ Public Class frmHemaNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
             rs.Parameters.AddWithValue("@specimen_tracking_date_time", Now) 'version 1.6.0.0-beta
@@ -1322,6 +1324,8 @@ Public Class frmHemaNew
                 SaveRecordwthoutMSG("INSERT INTO `patient_remarks` (`remarks`, `diagnosis`, `sample_id`, `section`, `sub_section`) VALUES (@remarks, @lab_comment, @MainSampleID, @Section, @SubSection)")
             End If
             Disconnect()
+
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
 
             'UpdateWorkSheet()
             'version 1.6.0.0-beta
@@ -1501,7 +1505,7 @@ Public Class frmHemaNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
             Connect()
@@ -1667,6 +1671,8 @@ Public Class frmHemaNew
             End If
             Disconnect()
 
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
+
             mainID = MainSampleID
 
             frmHemaWorklist.LoadRecords()
@@ -1748,7 +1754,7 @@ Public Class frmHemaNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
             Connect()
@@ -1890,6 +1896,8 @@ Public Class frmHemaNew
                 SaveRecordwthoutMSG("INSERT INTO `patient_remarks` (`remarks`, `diagnosis`, `sample_id`, `section`, `sub_section`) VALUES (@remarks, @lab_comment, @MainSampleID, @Section, @SubSection)")
             End If
             Disconnect()
+
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
 
             mainID = MainSampleID
 
