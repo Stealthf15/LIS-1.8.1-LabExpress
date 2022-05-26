@@ -583,7 +583,7 @@
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.44685in</Height>
+                      <Height>0.63435in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -593,13 +593,10 @@
                                   <TablixBody>
                                     <TablixColumns>
                                       <TablixColumn>
-                                        <Width>2.93784in</Width>
+                                        <Width>3.79201in</Width>
                                       </TablixColumn>
                                       <TablixColumn>
-                                        <Width>2.93915in</Width>
-                                      </TablixColumn>
-                                      <TablixColumn>
-                                        <Width>1.63542in</Width>
+                                        <Width>3.7204in</Width>
                                       </TablixColumn>
                                     </TablixColumns>
                                     <TablixRows>
@@ -676,6 +673,11 @@
                                               </Textbox>
                                             </CellContents>
                                           </TablixCell>
+                                        </TablixCells>
+                                      </TablixRow>
+                                      <TablixRow>
+                                        <Height>0.19685in</Height>
+                                        <TablixCells>
                                           <TablixCell>
                                             <CellContents>
                                               <Textbox Name="his_mainid">
@@ -684,6 +686,14 @@
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
+                                                      <TextRun>
+                                                        <Value xml:space="preserve">     </Value>
+                                                        <Style>
+                                                          <FontFamily>microsoft sans serif</FontFamily>
+                                                          <FontSize>8pt</FontSize>
+                                                          <FontWeight>Normal</FontWeight>
+                                                        </Style>
+                                                      </TextRun>
                                                       <TextRun>
                                                         <Value>=Fields!his_mainid.Value</Value>
                                                         <Style>
@@ -694,7 +704,7 @@
                                                       </TextRun>
                                                     </TextRuns>
                                                     <Style>
-                                                      <TextAlign>Center</TextAlign>
+                                                      <TextAlign>Left</TextAlign>
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
@@ -703,14 +713,16 @@
                                                   <Border>
                                                     <Style>None</Style>
                                                   </Border>
-                                                  <PaddingLeft>2pt</PaddingLeft>
+                                                  <PaddingLeft>10pt</PaddingLeft>
                                                   <PaddingRight>2pt</PaddingRight>
                                                   <PaddingTop>2pt</PaddingTop>
                                                   <PaddingBottom>2pt</PaddingBottom>
                                                 </Style>
                                               </Textbox>
+                                              <ColSpan>2</ColSpan>
                                             </CellContents>
                                           </TablixCell>
+                                          <TablixCell />
                                         </TablixCells>
                                       </TablixRow>
                                     </TablixRows>
@@ -719,19 +731,26 @@
                                     <TablixMembers>
                                       <TablixMember />
                                       <TablixMember />
-                                      <TablixMember />
                                     </TablixMembers>
                                   </TablixColumnHierarchy>
                                   <TablixRowHierarchy>
                                     <TablixMembers>
                                       <TablixMember>
                                         <Group Name="Details2" />
+                                        <TablixMembers>
+                                          <TablixMember />
+                                          <TablixMember>
+                                            <Visibility>
+                                              <Hidden>=IIF(Fields!his_mainid.Value = "", True, False)</Hidden>
+                                            </Visibility>
+                                          </TablixMember>
+                                        </TablixMembers>
                                       </TablixMember>
                                     </TablixMembers>
                                   </TablixRowHierarchy>
                                   <DataSetName>DataSet2</DataSetName>
                                   <Top>0.225in</Top>
-                                  <Height>0.19685in</Height>
+                                  <Height>0.3937in</Height>
                                   <Width>7.51241in</Width>
                                   <Style>
                                     <Border>
@@ -809,7 +828,7 @@
                 <DataSetName>DataSet2</DataSetName>
                 <Top>0.19524in</Top>
                 <Left>0.00131in</Left>
-                <Height>0.44685in</Height>
+                <Height>0.63435in</Height>
                 <Width>7.51241in</Width>
                 <Style>
                   <Border>
@@ -821,13 +840,10 @@
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>2.93915in</Width>
+                      <Width>3.79332in</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.93915in</Width>
-                    </TablixColumn>
-                    <TablixColumn>
-                      <Width>1.63542in</Width>
+                      <Width>3.7204in</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
@@ -917,54 +933,12 @@
                             </Textbox>
                           </CellContents>
                         </TablixCell>
-                        <TablixCell>
-                          <CellContents>
-                            <Textbox Name="Textbox1">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>REMARKS</Value>
-                                      <Style>
-                                        <FontFamily>microsoft sans serif</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Normal</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Center</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox1</rd:DefaultName>
-                              <Style>
-                                <Border>
-                                  <Style>Solid</Style>
-                                </Border>
-                                <LeftBorder>
-                                  <Style>None</Style>
-                                </LeftBorder>
-                                <RightBorder>
-                                  <Style>None</Style>
-                                </RightBorder>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                          </CellContents>
-                        </TablixCell>
                       </TablixCells>
                     </TablixRow>
                   </TablixRows>
                 </TablixBody>
                 <TablixColumnHierarchy>
                   <TablixMembers>
-                    <TablixMember />
                     <TablixMember />
                     <TablixMember />
                   </TablixMembers>
@@ -991,7 +965,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>2.74289cm</Top>
             <Left>0.62012cm</Left>
-            <Height>0.64209in</Height>
+            <Height>0.86084in</Height>
             <Width>7.51372in</Width>
             <Style>
               <Border>
@@ -1647,8 +1621,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>CurrUser</rd:DefaultName>
-            <Top>1.79141in</Top>
-            <Left>0.13417in</Left>
+            <Top>2.05785in</Top>
+            <Left>0.11665in</Left>
             <Height>0.34706in</Height>
             <Width>7.66288in</Width>
             <ZIndex>2</ZIndex>
@@ -1663,7 +1637,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.23477in</Height>
+        <Height>2.48477in</Height>
         <Style />
       </Body>
       <Width>8.11357in</Width>
@@ -1740,6 +1714,7 @@
               <Value>=First(Fields!img.Value, "DataSet5")</Value>
               <MIMEType>image/png</MIMEType>
               <Sizing>Fit</Sizing>
+              <Top>0in</Top>
               <Left>5.50412in</Left>
               <Height>0.5405in</Height>
               <Width>2.4657in</Width>
@@ -1822,6 +1797,7 @@
               </Style>
             </Textbox>
             <Line Name="Line4">
+              <Top>0in</Top>
               <Left>0.05344in</Left>
               <Height>0in</Height>
               <Width>7.90388in</Width>
@@ -1971,6 +1947,7 @@
               <Value>=First(Fields!signature.Value, "DataSet4")</Value>
               <MIMEType>image/png</MIMEType>
               <Sizing>Fit</Sizing>
+              <Top>0in</Top>
               <Left>0.11665in</Left>
               <Height>0.5405in</Height>
               <Width>2.5343in</Width>
@@ -2089,6 +2066,7 @@
               <Value>=First(Fields!signature.Value, "DataSet8")</Value>
               <MIMEType>image/png</MIMEType>
               <Sizing>Fit</Sizing>
+              <Top>0in</Top>
               <Left>2.80789in</Left>
               <Height>0.5405in</Height>
               <Width>2.5343in</Width>

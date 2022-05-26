@@ -5,11 +5,12 @@ Imports MailBee.SmtpMail
 Imports MailBee.Security
 Imports MailBee.Html
 Imports MailBee.BounceMail
+'Imports MailBee.Mime
 
-
-'Imports System.Net.Mail
 Imports System.IO
 Imports System.Net.Mail
+
+Imports EASendMail
 
 Module modEmail
 
@@ -93,7 +94,7 @@ Module modEmail
     '        msg.To.AsString = mailer.To.AsString
 
     '        If Not SMTP_CC = "" Then
-    '            msg.Cc = mailer.Cc
+    '            msg.CC = mailer.Cc
     '        End If
 
     '        msg.Subject = mailer.Subject
@@ -122,8 +123,93 @@ Module modEmail
     '    End Try
     'End Sub
 
+    'Function sendmail(ByVal Receiver As String, ByVal Name As String, ByVal Attach As String) As String
+    '    Dim Email As New MailMessage()
+    '    Try
+    '        Connect()
+    '        rs.Connection = conn
+    '        rs.CommandType = CommandType.Text
+    '        rs.CommandText = "SELECT * FROM `email_maintenance` WHERE `access` = 'Result' AND `status` = 'Active'"
+    '        reader = rs.ExecuteReader
+    '        reader.Read()
+    '        If reader.HasRows Then
+    '            SMTP_Server = reader(1).ToString
+    '            SMTP_PORT = reader(2).ToString
+    '            SMTP_Sender = reader(3).ToString
+    '            SMTP_Username = reader(4).ToString
+    '            SMTP_Password = reader(5).ToString
+    '            SMTP_CC = reader(6).ToString
+    '            SMTP_BC = reader(7).ToString
+    '        End If
+    '        Disconnect()
+
+    '        Dim SMTPServer As New SmtpClient
+    '        ''For Each Attachment As String In Attachments
+    '        ''    Email.Attachments.Add(New Attachment(Attachment))
+    '        'Next
+    '        Dim mailattach As String = Attach
+    '        Dim attachment As System.Net.Mail.Attachment
+    '        attachment = New System.Net.Mail.Attachment(mailattach)
+    '        Email.Attachments.Add(attachment)
+
+    '        Email.From = New MailAddress("LabExpress <" & SMTP_Sender & ">")
+    '        'For Each Recipient As String In Receiver
+    '        Email.To.Add(Receiver)
+    '        'Email.CC.Add(SMTP_CC)
+    '        'Email.Bcc.Add(SMTP_BC)
+    '        'Next
+    '        'Email.To.Add(Receiver)
+    '        Email.Subject = "Laboratory Test Result"
+    '        Email.IsBodyHtml = True
+    '        Email.Body = "<div style='font-family: helvetica, arial, sans - serif;'>Greetings!</div>
+    '<br>
+    '<div style='font-family: helvetica, arial, sans - serif;'>Please find the attached laboratory test result in PDF file. This is an electronic reporting of validated laboratory results, signatures are no longer required.</div>
+    '<br>
+    '<div style='font-family: helvetica, arial, sans - serif;'>For Questions regarding the Results, you may contact us at (02) 7799 7144, (02) 8801 4056, (63) 917 116 1059 or email <span style='text-decoration: underline;'><span style='color: #3366ff; text-decoration: underline;'><a href='mailto:results@healthplus.pH'>results@healthplus.ph</a></span></span></div>
+    '<br>
+    '<div style='font-family: helvetica, arial, sans - serif;'>LABExpress offers Home Service Laboratory testing covering Metro Manila and its outskirts. Our Visiting Medical Professionals are well trained and equipped to collect specimens with your safety and comfort in mind. To Book your Home Service Schedule, please send an email to <a href='mailto:homeservice@healthplus.ph'>homeservice@healthplus.ph</a> or message us at Facebook at <a href='m.me/LABExpressMD'>m.me/LABExpressMD</a>.</div>
+    '<br>
+    '<div style='font-family: helvetica, arial, sans - serif;'>The attached Laboratory result is best interpreted by your Physician.</div>
+    '<br>
+    '<div style='font-family: helvetica, arial, sans - serif;'>***IMPORTANT: Do not reply to this email. This is electronically-generated designed to streamline the delivery of laboratory results.***</div>
+    '<br>
+    '<div style='font-family: helvetica, arial, sans - serif;'><strong><span style='color:  #ff9900;'>LAB</span><span style='color: #1760cf;'>Express</span> Medical Diagnostics</strong></div>
+    '<div style='font-family helvetica, arial, sans - serif;'>Unit 2 #262 Alabang-Zapote Road,</div>
+    '<div style='font-family: helvetica, arial, sans - serif;'>Talon 2, Las Pi&ntilde;as City, Metro Manila</div>
+    '<div style='font-family: helvetica, arial, sans - serif;'>Phone: 02.7799.7144; 02.8801.4056</div>
+    '<div style='font-family: helvetica, arial, sans - serif;'>Mobile Phone: 0917.116.1059</div>
+    '<br>
+    '<br>
+    '<div style='font-family: helvetica, arial, sans - serif;'><strong>FAST.</strong></div>
+    '<div style='font-family: helvetica, arial, sans - serif;'><strong>ACCURATE.</strong></div>
+    '<div style='font-family: helvetica, arial, sans - serif;'><strong>AFFORDABLE.</strong></div>"
+
+    '        SMTPServer.Host = SMTP_Server
+    '        SMTPServer.Port = SMTP_PORT
+    '        SMTPServer.Credentials = New System.Net.NetworkCredential(SMTP_Username, SMTP_Password)
+    '        SMTPServer.EnableSsl = True
+    '        SMTPServer.Send(Email)
+    '        Email.Dispose()
+    '        MessageBox.Show("Email successfully sent.", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    '    Catch ex As SmtpException
+    '        Email.Dispose()
+    '        MessageBox.Show(ex.Message, "SMTP Exception", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+    '        Return ex.Message
+    '    Catch ex As ArgumentOutOfRangeException
+    '        Email.Dispose()
+    '        MessageBox.Show(ex.Message, "AOR Exception", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+    '        Return ex.Message
+    '    Catch Ex As InvalidOperationException
+    '        Email.Dispose()
+    '        MessageBox.Show(Ex.Message, "Invalid Operation Exception", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+    '        Return Ex.Message
+    '    End Try
+    '    'MessageBox.Show("Nothing")
+    'End Function
+
     Function sendmail(ByVal Receiver As String, ByVal Name As String, ByVal Attach As String) As String
-        Dim Email As New MailMessage()
+        Dim Email As New MailMessage
+
         Try
             Connect()
             rs.Connection = conn
@@ -143,51 +229,55 @@ Module modEmail
             Disconnect()
 
             Dim SMTPServer As New SmtpClient
-            ''For Each Attachment As String In Attachments
-            ''    Email.Attachments.Add(New Attachment(Attachment))
-            'Next
+            SMTPServer.UseDefaultCredentials = False
+            SMTPServer.Credentials = New System.Net.NetworkCredential(SMTP_Username, SMTP_Password)
+            SMTPServer.Port = SMTP_PORT
+            SMTPServer.EnableSsl = True
+            SMTPServer.Host = SMTP_Server
+
+            Email = New MailMessage
+            Email.From = New MailAddress("LabExpress <" & SMTP_Sender & ">")
+            Email.To.Add(Receiver)
+            Email.CC.Add(SMTP_CC)
+            Email.Bcc.Add(SMTP_BC)
+            Email.Subject = "Laboratory Test Result"
+            Email.IsBodyHtml = True
+
+            Email.Body = "<div style='font-family: helvetica, arial, sans - serif;'>Greetings!</div>
+    <br>
+    <div style='font-family: helvetica, arial, sans - serif;'>Please find the attached laboratory test result in PDF file. This is an electronic reporting of validated laboratory results, signatures are no longer required.</div>
+    <br>
+    <div style='font-family: helvetica, arial, sans - serif;'>For Questions regarding the Results, you may contact us at (02) 7799 7144, (02) 8801 4056, (63) 917 116 1059 or email <span style='text-decoration: underline;'><span style='color: #3366ff; text-decoration: underline;'><a href='mailto:results@healthplus.pH'>results@healthplus.ph</a></span></span></div>
+    <br>
+    <div style='font-family: helvetica, arial, sans - serif;'>LABExpress offers Home Service Laboratory testing covering Metro Manila and its outskirts. Our Visiting Medical Professionals are well trained and equipped to collect specimens with your safety and comfort in mind. To Book your Home Service Schedule, please send an email to <a href='mailto:homeservice@healthplus.ph'>homeservice@healthplus.ph</a> or message us at Facebook at <a href='m.me/LABExpressMD'>m.me/LABExpressMD</a>.</div>
+    <br>
+    <div style='font-family: helvetica, arial, sans - serif;'>The attached Laboratory result is best interpreted by your Physician.</div>
+    <br>
+    <div style='font-family: helvetica, arial, sans - serif;'>***IMPORTANT: Do not reply to this email. This is electronically-generated designed to streamline the delivery of laboratory results.***</div>
+    <br>
+    <div style='font-family: helvetica, arial, sans - serif;'><strong><span style='color:  #ff9900;'>LAB</span><span style='color: #1760cf;'>Express</span> Medical Diagnostics</strong></div>
+    <div style='font-family helvetica, arial, sans - serif;'>Unit 2 #262 Alabang-Zapote Road,</div>
+    <div style='font-family: helvetica, arial, sans - serif;'>Talon 2, Las Pi&ntilde;as City, Metro Manila</div>
+    <div style='font-family: helvetica, arial, sans - serif;'>Phone: 02.7799.7144; 02.8801.4056</div>
+    <div style='font-family: helvetica, arial, sans - serif;'>Mobile Phone: 0917.116.1059</div>
+    <br>
+    <br>
+    <div style='font-family: helvetica, arial, sans - serif;'><strong>FAST.</strong></div>
+    <div style='font-family: helvetica, arial, sans - serif;'><strong>ACCURATE.</strong></div>
+    <div style='font-family: helvetica, arial, sans - serif;'><strong>AFFORDABLE.</strong></div>"
+
             Dim mailattach As String = Attach
             Dim attachment As System.Net.Mail.Attachment
             attachment = New System.Net.Mail.Attachment(mailattach)
             Email.Attachments.Add(attachment)
 
-            Email.From = New MailAddress("LabExpress <" & SMTP_Sender & ">")
+            SMTPServer.Send(Email)
+
             'For Each Recipient As String In Receiver
-            Email.CC.Add(Receiver)
-            'Email.CC.Add(SMTP_CC)
-            'Email.Bcc.Add(SMTP_BC)
+
             'Next
             'Email.To.Add(Receiver)
-            Email.Subject = "Laboratory Test Result"
-            Email.IsBodyHtml = True
-            Email.Body = "<div style='font-family: helvetica, arial, sans - serif;'>Greetings!</div>
-<br>
-<div style='font-family: helvetica, arial, sans - serif;'>Please find the attached laboratory test result in PDF file. This is an electronic reporting of validated laboratory results, signatures are no longer required.</div>
-<br>
-<div style='font-family: helvetica, arial, sans - serif;'>For Questions regarding the Results, you may contact us at (02) 7799 7144, (02) 8801 4056, (63) 917 116 1059 or email <span style='text-decoration: underline;'><span style='color: #3366ff; text-decoration: underline;'><a href='mailto:results@healthplus.pH'>results@healthplus.ph</a></span></span></div>
-<br>
-<div style='font-family: helvetica, arial, sans - serif;'>LABExpress offers Home Service Laboratory testing covering Metro Manila and its outskirts. Our Visiting Medical Professionals are well trained and equipped to collect specimens with your safety and comfort in mind. To Book your Home Service Schedule, please send an email to <a href='mailto:homeservice@healthplus.ph'>homeservice@healthplus.ph</a> or message us at Facebook at <a href='m.me/LABExpressMD'>m.me/LABExpressMD</a>.</div>
-<br>
-<div style='font-family: helvetica, arial, sans - serif;'>The attached Laboratory result is best interpreted by your Physician.</div>
-<br>
-<div style='font-family: helvetica, arial, sans - serif;'>***IMPORTANT: Do not reply to this email. This is electronically-generated designed to streamline the delivery of laboratory results.***</div>
-<br>
-<div style='font-family: helvetica, arial, sans - serif;'><strong><span style='color:  #ff9900;'>LAB</span><span style='color: #1760cf;'>Express</span> Medical Diagnostics</strong></div>
-<div style='font-family helvetica, arial, sans - serif;'>Unit 2 #262 Alabang-Zapote Road,</div>
-<div style='font-family: helvetica, arial, sans - serif;'>Talon 2, Las Pi&ntilde;as City, Metro Manila</div>
-<div style='font-family: helvetica, arial, sans - serif;'>Phone: 02.7799.7144; 02.8801.4056</div>
-<div style='font-family: helvetica, arial, sans - serif;'>Mobile Phone: 0917.116.1059</div>
-<br>
-<br>
-<div style='font-family: helvetica, arial, sans - serif;'><strong>FAST.</strong></div>
-<div style='font-family: helvetica, arial, sans - serif;'><strong>ACCURATE.</strong></div>
-<div style='font-family: helvetica, arial, sans - serif;'><strong>AFFORDABLE.</strong></div>"
 
-            SMTPServer.Host = SMTP_Server
-            SMTPServer.Port = SMTP_PORT
-            SMTPServer.Credentials = New System.Net.NetworkCredential(SMTP_Username, SMTP_Password)
-            SMTPServer.EnableSsl = True
-            SMTPServer.Send(Email)
             Email.Dispose()
             MessageBox.Show("Email successfully sent.", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As SmtpException

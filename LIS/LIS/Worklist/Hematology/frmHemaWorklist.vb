@@ -407,7 +407,7 @@ Public Class frmHemaWorklist
                         FROM `tmpWorklist` 
                         LEFT JOIN `specimen_tracking` ON
 	                        `specimen_tracking`.`sample_id` = `tmpWorklist`.`main_id`
-                        WHERE (`tmpWorklist`.`status` = 'Result Received' OR `tmpWorklist`.`status` = 'Validated' OR `tmpWorklist`.`status` = 'Processing' OR `tmpWorklist`.`status` = 'For Verification' OR `tmpWorklist`.`status` = 'Verified'gr)
+                        WHERE (`tmpWorklist`.`status` = 'Result Received' OR `tmpWorklist`.`status` = 'Validated' OR `tmpWorklist`.`status` = 'Processing' OR `tmpWorklist`.`status` = 'For Verification' OR `tmpWorklist`.`status` = 'Verified')
                         AND (`tmpworklist`.`patient_name` LIKE '" & txtSearch.Text & "%')
                         AND (`tmpWorklist`.`testtype` = `specimen_tracking`.`section`)
                         AND (`tmpWorklist`.`sub_section` = `specimen_tracking`.`sub_section`)

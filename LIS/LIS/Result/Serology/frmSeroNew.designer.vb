@@ -101,6 +101,7 @@ Partial Class frmSeroNew
         Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl5 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
+        Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.cboVerify.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cboPathologist.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cboMedTech.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -389,15 +390,15 @@ Partial Class frmSeroNew
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager
-        Me.barDockControlTop.Size = New System.Drawing.Size(1307, 36)
+        Me.barDockControlTop.Size = New System.Drawing.Size(1309, 36)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 702)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 704)
         Me.barDockControlBottom.Manager = Me.BarManager
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1307, 0)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1309, 0)
         '
         'barDockControlLeft
         '
@@ -405,15 +406,15 @@ Partial Class frmSeroNew
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 36)
         Me.barDockControlLeft.Manager = Me.BarManager
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 666)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 668)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1307, 36)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1309, 36)
         Me.barDockControlRight.Manager = Me.BarManager
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 666)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 668)
         '
         'BarLargeButtonItem3
         '
@@ -635,7 +636,7 @@ Partial Class frmSeroNew
         Me.GroupControl3.LookAndFeel.SkinName = "The Bezier"
         Me.GroupControl3.LookAndFeel.UseDefaultLookAndFeel = False
         Me.GroupControl3.Name = "GroupControl3"
-        Me.GroupControl3.Size = New System.Drawing.Size(948, 519)
+        Me.GroupControl3.Size = New System.Drawing.Size(948, 542)
         Me.GroupControl3.TabIndex = 175
         Me.GroupControl3.Text = "Test Result"
         '
@@ -679,7 +680,7 @@ Partial Class frmSeroNew
         Me.dtResult.MainView = Me.GridView
         Me.dtResult.MenuManager = Me.BarManager
         Me.dtResult.Name = "dtResult"
-        Me.dtResult.Size = New System.Drawing.Size(944, 490)
+        Me.dtResult.Size = New System.Drawing.Size(944, 513)
         Me.dtResult.TabIndex = 58
         Me.dtResult.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView})
         '
@@ -776,7 +777,7 @@ Partial Class frmSeroNew
         Me.GroupControl2.Controls.Add(Me.LabelControl41)
         Me.GroupControl2.Controls.Add(Me.cboPhysician)
         Me.GroupControl2.Controls.Add(Me.cboRequest)
-        Me.GroupControl2.Location = New System.Drawing.Point(15, 294)
+        Me.GroupControl2.Location = New System.Drawing.Point(15, 317)
         Me.GroupControl2.LookAndFeel.SkinName = "The Bezier"
         Me.GroupControl2.LookAndFeel.UseDefaultLookAndFeel = False
         Me.GroupControl2.Name = "GroupControl2"
@@ -937,6 +938,7 @@ Partial Class frmSeroNew
         Me.GroupControl1.CaptionImageOptions.AllowGlyphSkinning = True
         Me.GroupControl1.CaptionImageOptions.SvgImage = CType(resources.GetObject("GroupControl1.CaptionImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.GroupControl1.CaptionImageOptions.SvgImageSize = New System.Drawing.Size(16, 16)
+        Me.GroupControl1.Controls.Add(Me.LabelControl3)
         Me.GroupControl1.Controls.Add(Me.txtEmail)
         Me.GroupControl1.Controls.Add(Me.LabelControl42)
         Me.GroupControl1.Controls.Add(Me.cboCS)
@@ -960,13 +962,13 @@ Partial Class frmSeroNew
         Me.GroupControl1.Controls.Add(Me.txtAddress)
         Me.GroupControl1.Location = New System.Drawing.Point(15, 45)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(312, 243)
+        Me.GroupControl1.Size = New System.Drawing.Size(312, 266)
         Me.GroupControl1.TabIndex = 173
         Me.GroupControl1.Text = "Patient Details"
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(90, 244)
+        Me.txtEmail.Location = New System.Drawing.Point(90, 241)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.txtEmail.Properties.Appearance.Options.UseForeColor = True
@@ -1119,7 +1121,7 @@ Partial Class frmSeroNew
         Me.GroupControl4.CaptionImageOptions.SvgImage = CType(resources.GetObject("GroupControl4.CaptionImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.GroupControl4.CaptionImageOptions.SvgImageSize = New System.Drawing.Size(16, 16)
         Me.GroupControl4.Controls.Add(Me.txtRemarks)
-        Me.GroupControl4.Location = New System.Drawing.Point(333, 570)
+        Me.GroupControl4.Location = New System.Drawing.Point(333, 593)
         Me.GroupControl4.LookAndFeel.SkinName = "The Bezier"
         Me.GroupControl4.LookAndFeel.UseDefaultLookAndFeel = False
         Me.GroupControl4.Name = "GroupControl4"
@@ -1145,7 +1147,7 @@ Partial Class frmSeroNew
         Me.GroupControl5.Controls.Add(Me.LabelControl26)
         Me.GroupControl5.Controls.Add(Me.LabelControl29)
         Me.GroupControl5.Controls.Add(Me.LabelControl27)
-        Me.GroupControl5.Location = New System.Drawing.Point(15, 570)
+        Me.GroupControl5.Location = New System.Drawing.Point(15, 593)
         Me.GroupControl5.LookAndFeel.SkinName = "The Bezier"
         Me.GroupControl5.LookAndFeel.UseDefaultLookAndFeel = False
         Me.GroupControl5.Name = "GroupControl5"
@@ -1166,13 +1168,25 @@ Partial Class frmSeroNew
         Me.GroupControl6.CaptionImageOptions.SvgImage = CType(resources.GetObject("GroupControl6.CaptionImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.GroupControl6.CaptionImageOptions.SvgImageSize = New System.Drawing.Size(16, 16)
         Me.GroupControl6.Controls.Add(Me.txtComment)
-        Me.GroupControl6.Location = New System.Drawing.Point(815, 570)
+        Me.GroupControl6.Location = New System.Drawing.Point(815, 593)
         Me.GroupControl6.LookAndFeel.SkinName = "The Bezier"
         Me.GroupControl6.LookAndFeel.UseDefaultLookAndFeel = False
         Me.GroupControl6.Name = "GroupControl6"
         Me.GroupControl6.Size = New System.Drawing.Size(466, 108)
         Me.GroupControl6.TabIndex = 187
         Me.GroupControl6.Text = "Comment"
+        '
+        'LabelControl3
+        '
+        Me.LabelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.LabelControl3.Appearance.Options.UseForeColor = True
+        Me.LabelControl3.Location = New System.Drawing.Point(8, 244)
+        Me.LabelControl3.LookAndFeel.SkinName = "Visual Studio 2013 Blue"
+        Me.LabelControl3.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.LabelControl3.Name = "LabelControl3"
+        Me.LabelControl3.Size = New System.Drawing.Size(74, 13)
+        Me.LabelControl3.TabIndex = 171
+        Me.LabelControl3.Text = "Email Address:"
         '
         'frmSeroNew
         '
@@ -1182,7 +1196,7 @@ Partial Class frmSeroNew
         Me.Appearance.Options.UseForeColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1307, 702)
+        Me.ClientSize = New System.Drawing.Size(1309, 704)
         Me.ControlBox = False
         Me.Controls.Add(Me.GroupControl6)
         Me.Controls.Add(Me.GroupControl5)
@@ -1325,4 +1339,5 @@ Partial Class frmSeroNew
     Friend WithEvents txtEmail As DevExpress.XtraEditors.TextEdit
     Friend WithEvents btnVerification As DevExpress.XtraBars.BarLargeButtonItem
     Friend WithEvents btnEmailPush As DevExpress.XtraBars.BarLargeButtonItem
+    Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
 End Class

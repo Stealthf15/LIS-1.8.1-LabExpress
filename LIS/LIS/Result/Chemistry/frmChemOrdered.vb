@@ -364,6 +364,7 @@ Public Class frmChemOrdered
                 cboMedTech.Properties.Items.Add(reader(0))
             End While
             Disconnect()
+
             Connect()
             rs.Connection = conn
             rs.CommandType = CommandType.Text
@@ -372,6 +373,17 @@ Public Class frmChemOrdered
             reader.Read()
             If reader.HasRows Then
                 MedTechID = reader(0).ToString
+            End If
+            Disconnect()
+
+            Connect()
+            rs.Connection = conn
+            rs.CommandType = CommandType.Text
+            rs.CommandText = "SELECT * FROM `viewMedTEch` WHERE `name` LIKE '" & Me.cboVerify.Text & "'"
+            reader = rs.ExecuteReader
+            reader.Read()
+            If reader.HasRows Then
+                VerifyID = reader(0).ToString
             End If
             Disconnect()
 
@@ -872,7 +884,7 @@ Public Class frmChemOrdered
                     saveFileDialog1.Filter = "*PDF files (*.pdf)|*.pdf"
                     saveFileDialog1.FilterIndex = 2
                     saveFileDialog1.RestoreDirectory = True
-                    Dim newFile As New FileStream(My.Settings.PDFLocation & txtSampleID.Text & ".pdf", FileMode.Create)
+                    Dim newFile As New FileStream(CreateFolder(Section) & txtSampleID.Text & "_" & txtName.Text & ".pdf", FileMode.Create)
                     newFile.Write(byteViewer, 0, byteViewer.Length)
                     newFile.Close()
 

@@ -595,7 +595,7 @@
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.44685in</Height>
+                      <Height>0.67185in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -605,7 +605,7 @@
                                   <TablixBody>
                                     <TablixColumns>
                                       <TablixColumn>
-                                        <Width>2.08889in</Width>
+                                        <Width>2.79067in</Width>
                                       </TablixColumn>
                                       <TablixColumn>
                                         <Width>0.52083in</Width>
@@ -617,10 +617,7 @@
                                         <Width>1in</Width>
                                       </TablixColumn>
                                       <TablixColumn>
-                                        <Width>1.79522in</Width>
-                                      </TablixColumn>
-                                      <TablixColumn>
-                                        <Width>1.15625in</Width>
+                                        <Width>2.24969in</Width>
                                       </TablixColumn>
                                     </TablixColumns>
                                     <TablixRows>
@@ -802,14 +799,27 @@
                                               </Textbox>
                                             </CellContents>
                                           </TablixCell>
+                                        </TablixCells>
+                                      </TablixRow>
+                                      <TablixRow>
+                                        <Height>0.19685in</Height>
+                                        <TablixCells>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="his_mainid">
+                                              <Textbox Name="his_mainid1">
                                                 <CanGrow>true</CanGrow>
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
+                                                      <TextRun>
+                                                        <Value xml:space="preserve">     </Value>
+                                                        <Style>
+                                                          <FontFamily>microsoft sans serif</FontFamily>
+                                                          <FontSize>8pt</FontSize>
+                                                          <FontWeight>Normal</FontWeight>
+                                                        </Style>
+                                                      </TextRun>
                                                       <TextRun>
                                                         <Value>=Fields!his_mainid.Value</Value>
                                                         <Style>
@@ -820,23 +830,28 @@
                                                       </TextRun>
                                                     </TextRuns>
                                                     <Style>
-                                                      <TextAlign>Center</TextAlign>
+                                                      <TextAlign>Left</TextAlign>
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>his_mainid</rd:DefaultName>
+                                                <rd:DefaultName>his_mainid1</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>None</Style>
                                                   </Border>
-                                                  <PaddingLeft>2pt</PaddingLeft>
+                                                  <PaddingLeft>10pt</PaddingLeft>
                                                   <PaddingRight>2pt</PaddingRight>
                                                   <PaddingTop>2pt</PaddingTop>
                                                   <PaddingBottom>2pt</PaddingBottom>
                                                 </Style>
                                               </Textbox>
+                                              <ColSpan>5</ColSpan>
                                             </CellContents>
                                           </TablixCell>
+                                          <TablixCell />
+                                          <TablixCell />
+                                          <TablixCell />
+                                          <TablixCell />
                                         </TablixCells>
                                       </TablixRow>
                                     </TablixRows>
@@ -848,19 +863,26 @@
                                       <TablixMember />
                                       <TablixMember />
                                       <TablixMember />
-                                      <TablixMember />
                                     </TablixMembers>
                                   </TablixColumnHierarchy>
                                   <TablixRowHierarchy>
                                     <TablixMembers>
                                       <TablixMember>
                                         <Group Name="Details2" />
+                                        <TablixMembers>
+                                          <TablixMember />
+                                          <TablixMember>
+                                            <Visibility>
+                                              <Hidden>=IIF(Fields!his_mainid.Value = "", True, False)</Hidden>
+                                            </Visibility>
+                                          </TablixMember>
+                                        </TablixMembers>
                                       </TablixMember>
                                     </TablixMembers>
                                   </TablixRowHierarchy>
                                   <DataSetName>DataSet2</DataSetName>
                                   <Top>0.225in</Top>
-                                  <Height>0.19685in</Height>
+                                  <Height>0.3937in</Height>
                                   <Width>7.66288in</Width>
                                   <Style>
                                     <Border>
@@ -938,7 +960,7 @@
                 <DataSetName>DataSet2</DataSetName>
                 <Top>0.19524in</Top>
                 <Left>0.00131in</Left>
-                <Height>0.44685in</Height>
+                <Height>0.67185in</Height>
                 <Width>7.66288in</Width>
                 <Style>
                   <Border>
@@ -950,7 +972,7 @@
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>2.0902in</Width>
+                      <Width>2.79198in</Width>
                     </TablixColumn>
                     <TablixColumn>
                       <Width>0.52083in</Width>
@@ -962,10 +984,7 @@
                       <Width>1in</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>1.79522in</Width>
-                    </TablixColumn>
-                    <TablixColumn>
-                      <Width>1.15625in</Width>
+                      <Width>2.24969in</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
@@ -1179,54 +1198,12 @@
                             </Textbox>
                           </CellContents>
                         </TablixCell>
-                        <TablixCell>
-                          <CellContents>
-                            <Textbox Name="Textbox2">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>REMARKS</Value>
-                                      <Style>
-                                        <FontFamily>microsoft sans serif</FontFamily>
-                                        <FontSize>8pt</FontSize>
-                                        <FontWeight>Normal</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Center</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox2</rd:DefaultName>
-                              <Style>
-                                <Border>
-                                  <Style>Solid</Style>
-                                </Border>
-                                <LeftBorder>
-                                  <Style>None</Style>
-                                </LeftBorder>
-                                <RightBorder>
-                                  <Style>None</Style>
-                                </RightBorder>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                          </CellContents>
-                        </TablixCell>
                       </TablixCells>
                     </TablixRow>
                   </TablixRows>
                 </TablixBody>
                 <TablixColumnHierarchy>
                   <TablixMembers>
-                    <TablixMember />
                     <TablixMember />
                     <TablixMember />
                     <TablixMember />
@@ -1256,7 +1233,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>2.74289cm</Top>
             <Left>0.4192cm</Left>
-            <Height>0.64209in</Height>
+            <Height>0.86709in</Height>
             <Width>7.66419in</Width>
             <Style>
               <Border>
@@ -1912,8 +1889,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>CurrUser</rd:DefaultName>
-            <Top>1.79141in</Top>
-            <Left>0.16635in</Left>
+            <Top>2.01641in</Top>
+            <Left>0.16504in</Left>
             <Height>0.34706in</Height>
             <Width>7.66288in</Width>
             <ZIndex>2</ZIndex>
@@ -1928,7 +1905,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.20353in</Height>
+        <Height>2.42228in</Height>
         <Style />
       </Body>
       <Width>7.95986in</Width>
@@ -1938,42 +1915,6 @@
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Textbox Name="sex12">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Parameters!PrintStatus.Value</Value>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>8pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>sex</rd:DefaultName>
-              <Top>0.16933cm</Top>
-              <Left>13.73292cm</Left>
-              <Height>0.27776in</Height>
-              <Width>2.45708in</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
             <Image Name="Image1">
               <Source>Embedded</Source>
               <Value>Screenshot20210511182752</Value>
@@ -1981,7 +1922,6 @@
               <Left>0.01919in</Left>
               <Height>0.76042in</Height>
               <Width>3.45866in</Width>
-              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>

@@ -103,6 +103,81 @@ Public Class frmSeroOrdered
         Disconnect()
     End Sub
 
+    Private Sub LoadSignatories()
+        '###########################---Load Pathologist---################################################################
+        Connect()
+        rs.Connection = conn
+        rs.CommandText = "SELECT CONCAT(fname, ' ', mname, ' ', lname, ', ', designation) AS `name` FROM `pathologist` ORDER BY `name`"
+        reader = rs.ExecuteReader
+        While reader.Read
+            cboPathologist.Properties.Items.Add(reader(0))
+        End While
+        Disconnect()
+        '######################################----END-----###############################################################
+
+        '###########################---Load Medical Technologist---#######################################################
+        If My.Settings.MedTech = 0 Then
+            Connect()
+            rs.Connection = conn
+            rs.CommandType = CommandType.Text
+            rs.CommandText = "SELECT CONCAT(fname, ' ', mname, ' ', lname, ', ', designation) AS `name` FROM `medtech` WHERE `verificator` = 0 ORDER BY `name`"
+            reader = rs.ExecuteReader
+            While reader.Read
+                cboMedTech.Properties.Items.Add(reader(0))
+                cboVerify.Properties.Items.Add(reader(0))
+            End While
+            Disconnect()
+        ElseIf My.Settings.MedTech = 1 Then
+            Connect()
+            rs.Connection = conn
+            rs.CommandType = CommandType.Text
+            rs.CommandText = "SELECT CONCAT(fname, ' ', mname, ' ', lname, ', ', designation) AS `name` FROM `medtech` WHERE `id` = '" & CurrEmail & "' ORDER BY `name`"
+            reader = rs.ExecuteReader
+            While reader.Read
+                cboMedTech.Properties.Items.Add(reader(0))
+                cboVerify.Properties.Items.Add(reader(0))
+            End While
+            Disconnect()
+        End If
+        '######################################----END-----###############################################################
+
+        Connect()
+        rs.Connection = conn
+        rs.CommandType = CommandType.Text
+        rs.CommandText = "SELECT * FROM `viewMedTEch` WHERE `name` LIKE '" & Me.cboMedTech.Text & "'"
+        reader = rs.ExecuteReader
+        reader.Read()
+        If reader.HasRows Then
+            MedTechID = reader(0).ToString
+        End If
+        Disconnect()
+
+        Connect()
+        rs.Connection = conn
+        rs.CommandType = CommandType.Text
+        rs.CommandText = "SELECT * FROM `viewMedTEch` WHERE `name` LIKE '" & Me.cboVerify.Text & "'"
+        reader = rs.ExecuteReader
+        reader.Read()
+        If reader.HasRows Then
+            VerifyID = reader(0).ToString
+        End If
+        Disconnect()
+
+        '###########################---Load Med Tech for Verification---##################################################
+        'Connect()
+        'rs.Connection = conn
+        'rs.CommandType = CommandType.Text
+        'rs.CommandText = "SELECT CONCAT(fname, ' ', mname, ' ', lname, ', ', designation) AS `name` FROM `medtech` WHERE `verificator` = 1 ORDER BY `name`"
+        'reader = rs.ExecuteReader
+        'While reader.Read
+        '    cboVerify.Properties.Items.Add(reader(0))
+        'End While
+        'Disconnect()
+        '######################################----END-----###############################################################
+
+        cboPathologist.SelectedIndex = 0
+    End Sub
+
     Public Sub LoadTest()
         'On Error Resume Next
         Try
@@ -268,6 +343,7 @@ Public Class frmSeroOrdered
         'Load Combobox Data
         AutoLoadDoctor()
         AutoLoadRoom()
+        LoadSignatories()
         DisablePermission()
         LoadTest()
 
@@ -680,7 +756,7 @@ Public Class frmSeroOrdered
                     saveFileDialog1.Filter = "*PDF files (*.pdf)|*.pdf"
                     saveFileDialog1.FilterIndex = 2
                     saveFileDialog1.RestoreDirectory = True
-                    Dim newFile As New FileStream(My.Settings.PDFLocation & txtSampleID.Text & ".pdf", FileMode.Create)
+                    Dim newFile As New FileStream(CreateFolder(Section) & txtSampleID.Text & "_" & txtName.Text & ".pdf", FileMode.Create)
                     newFile.Write(byteViewer, 0, byteViewer.Length)
                     newFile.Close()
 

@@ -722,7 +722,7 @@ Public Class frmSeroNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
             rs.Parameters.AddWithValue("@specimen_tracking_date_time", Now) 'version 1.6.0.0-beta
@@ -943,6 +943,8 @@ Public Class frmSeroNew
                 SaveRecordwthoutMSG("INSERT INTO `patient_remarks` (`remarks`, `diagnosis`, `sample_id`, `section`, `sub_section`) VALUES (@remarks, @lab_comment, @MainSampleID, @Section, @SubSection)")
             End If
             Disconnect()
+
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
 
             Connect()
             rs.Connection = conn
@@ -1095,7 +1097,7 @@ Public Class frmSeroNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
             rs.Parameters.AddWithValue("@specimen_tracking_date_time", Now) 'version 1.6.0.0-beta
@@ -1316,6 +1318,8 @@ Public Class frmSeroNew
                 SaveRecordwthoutMSG("INSERT INTO `patient_remarks` (`remarks`, `diagnosis`, `sample_id`, `section`, `sub_section`) VALUES (@remarks, @lab_comment, @MainSampleID, @Section, @SubSection)")
             End If
             Disconnect()
+
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
 
             Using myRDLCPrinter As New RDLCPrinterPrintNew(MainSampleID, Section, SubSection, "1", My.Settings.DefaultPrinter)
                 If My.Settings.SaveAsPDF Then
@@ -1494,7 +1498,7 @@ Public Class frmSeroNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
             Connect()
@@ -1677,6 +1681,8 @@ Public Class frmSeroNew
             End If
             Disconnect()
 
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
+
             'UpdateWorkSheet()
 
             mainID = MainSampleID
@@ -1770,7 +1776,7 @@ Public Class frmSeroNew
             rs.Parameters.AddWithValue("@accession_no", txtAccession.Text)
             rs.Parameters.AddWithValue("@OR_No", txtORNo.Text)
             rs.Parameters.AddWithValue("@CS_No", txtChargeSlip.Text)
-
+            rs.Parameters.AddWithValue("@emailAdd", txtEmail.Text)
             rs.Parameters.AddWithValue("@Section", Section)
             rs.Parameters.AddWithValue("@SubSection", SubSection)
 
@@ -1916,6 +1922,8 @@ Public Class frmSeroNew
                 SaveRecordwthoutMSG("INSERT INTO `patient_remarks` (`remarks`, `diagnosis`, `sample_id`, `section`, `sub_section`) VALUES (@remarks, @lab_comment, @MainSampleID, @Section, @SubSection)")
             End If
             Disconnect()
+
+            UpdateRecordwthoutMSG("UPDATE `email_details` SET `email_address` = @emailAdd WHERE `sample_id` = @mainID AND `section` = @Section AND `sub_section` = @SubSection")
 
             mainID = MainSampleID
 

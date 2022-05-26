@@ -965,6 +965,37 @@ Public Class frmUrinNew
                 End If
             Next
 
+            Using myRDLCPrinter As New RDLCPrinterPrintNew(MainSampleID, Section, SubSection, "0", My.Settings.DefaultPrinter)
+                If My.Settings.SaveAsPDF Then
+                    Dim byteViewer As Byte() = myRDLCPrinter.LocalReport.Render("PDF")
+                    Dim saveFileDialog1 As New SaveFileDialog()
+                    saveFileDialog1.Filter = "*PDF files (*.pdf)|*.pdf"
+                    saveFileDialog1.FilterIndex = 2
+                    saveFileDialog1.RestoreDirectory = True
+                    Dim newFile As New FileStream(CreateFolder(Section) & txtSampleID.Text & "_" & txtName.Text & ".pdf", FileMode.Create)
+                    newFile.Write(byteViewer, 0, byteViewer.Length)
+                    newFile.Close()
+
+                    '------------------Save Email Details------------------------------
+                    Connect()
+                    rs.Connection = conn
+                    rs.CommandType = CommandType.Text
+                    rs.CommandText = ("INSERT INTO `pdf_location` (`sample_id`, `pdf_location`, `section`, `sub_section`) VALUES " _
+                            & "(" _
+                            & "@mainID," _
+                            & "@PDFLocation," _
+                            & "@Section," _
+                            & "@SubSection" _
+                            & ")"
+                            )
+                    rs.ExecuteNonQuery()
+                    Disconnect()
+                    '------------------Save Email Details------------------------------
+                Else
+
+                End If
+            End Using
+
             Connect()
             rs.Connection = conn
             rs.CommandType = CommandType.Text
